@@ -5,28 +5,28 @@
 class Lagoon < Formula
   desc "amazee.io's local development helper tool"
   homepage "https://github.com/uselagoon/lagoon-cli"
-  version "0.11.7"
+  version "0.11.8"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7/lagoon-cli-0.11.7-darwin-amd64.tar.gz"
-      sha256 "0dc0170a1dcc558ea9a3d693d2ef957a32edcf5d30587709b944a5e467810224"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.8/lagoon-cli-0.11.8-darwin-amd64.tar.gz"
+      sha256 "ddff32d9098fbc5783ca51c0c46c2170c40f539400c34fb065735020d45019c1"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7/lagoon-cli-0.11.7-darwin-arm64.tar.gz"
-      sha256 "2a940be31518ea1e43ef3cbd1063ae7c53df8c3ca13f4a5551a17c45b4872f4a"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.8/lagoon-cli-0.11.8-darwin-arm64.tar.gz"
+      sha256 "8308db8553fdb9ec4d0c0cbeed48e8b5c1a2f19f60df8ba54cd63ce457282d38"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7/lagoon-cli-0.11.7-linux-amd64.tar.gz"
-      sha256 "d9f6fffed72a41fbe38d84c64dea48f540e442e1e53575317a5393e0b30b1524"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.8/lagoon-cli-0.11.8-linux-amd64.tar.gz"
+      sha256 "9c41acb29b9456590ba81864d3ccd6e0b86008733194e43d98dddd079d9f8b6c"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7/lagoon-cli-0.11.7-linux-arm64.tar.gz"
-      sha256 "14ebbf89fa1fcee31f5499ea2987d0a9d0ff8ff50974db78bb55f1fe7d1c7cf9"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.8/lagoon-cli-0.11.8-linux-arm64.tar.gz"
+      sha256 "5fdb1928de06ed6f0c20e530a38fb98b25280fa677198d3c0cfebe4a292a0e9f"
     end
   end
 
