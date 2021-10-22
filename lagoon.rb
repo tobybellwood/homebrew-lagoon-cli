@@ -5,28 +5,28 @@
 class Lagoon < Formula
   desc "amazee.io's local development helper tool"
   homepage "https://github.com/uselagoon/lagoon-cli"
-  version "0.11.10"
+  version "0.11.11"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.10/lagoon-cli-v0.11.10-darwin-amd64.tar.gz"
-      sha256 "bad23dd7c7dab205cc9cf06af0bf94a79b9da99a620d249e8a8fe6ce8b4408ea"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-darwin-amd64.tar.gz"
+      sha256 "fbdec15e99936f0eeb6eab337c05812341034ee734f6b3e44ea00cf846d9f000"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.10/lagoon-cli-v0.11.10-darwin-arm64.tar.gz"
-      sha256 "1a6e01071cb02c4f997b00714bbff946b3b5b26c38c9d02fc51dc987bf5ca0ae"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-darwin-arm64.tar.gz"
+      sha256 "1088d401eb5efc98ce8dca7263055b10dab1071007983daa66ba947cb1d44138"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.10/lagoon-cli-v0.11.10-linux-amd64.tar.gz"
-      sha256 "84a3219a672ce233c2ba972c4c55bc67a69f8e67950ac23b22046c7a29835942"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-linux-amd64.tar.gz"
+      sha256 "02eb69e4e3aa90870aa9258133e85ff4096c01ceefc926ac07497d3b6cee0921"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.10/lagoon-cli-v0.11.10-linux-arm64.tar.gz"
-      sha256 "c6c5e3c5d89657e033214a70d81c7b40ad2fffd0b7eb319bdaa1ef0ec6562f4a"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-linux-arm64.tar.gz"
+      sha256 "81d8d9e0ece4e8713a10161db1c670646f8a8eb4828b3a1992f0791a7e3439b6"
     end
   end
 
