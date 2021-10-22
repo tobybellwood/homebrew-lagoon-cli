@@ -5,28 +5,28 @@
 class Lagoon < Formula
   desc "amazee.io's local development helper tool"
   homepage "https://github.com/uselagoon/lagoon-cli"
-  version "0.11.11"
+  version "0.11.7-rc.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-darwin-amd64.tar.gz"
-      sha256 "fbdec15e99936f0eeb6eab337c05812341034ee734f6b3e44ea00cf846d9f000"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7-rc.0/lagoon-cli-v0.11.7-rc.0-darwin-amd64.tar.gz"
+      sha256 "3b295fe9379bc30c24d60250c98331403c78c54eed008f471a6942f66cc7a8ca"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-darwin-arm64.tar.gz"
-      sha256 "1088d401eb5efc98ce8dca7263055b10dab1071007983daa66ba947cb1d44138"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7-rc.0/lagoon-cli-v0.11.7-rc.0-darwin-arm64.tar.gz"
+      sha256 "a10c4fa2d5c3856140c8a1a0ac438e84e517f557788b8333a9fff9f49a6587fd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-linux-amd64.tar.gz"
-      sha256 "02eb69e4e3aa90870aa9258133e85ff4096c01ceefc926ac07497d3b6cee0921"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7-rc.0/lagoon-cli-v0.11.7-rc.0-linux-amd64.tar.gz"
+      sha256 "22f4125960f98fbdf65370705b28b3eeb9f0eb9f6e9f6f111c4edf0752b45add"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.11/lagoon-cli-v0.11.11-linux-arm64.tar.gz"
-      sha256 "81d8d9e0ece4e8713a10161db1c670646f8a8eb4828b3a1992f0791a7e3439b6"
+      url "https://github.com/tobybellwood/lagoon-cli/releases/download/v0.11.7-rc.0/lagoon-cli-v0.11.7-rc.0-linux-arm64.tar.gz"
+      sha256 "2d267e3b6df07a2c3b035bd5ee96db1273448da6f5bb584b944cb3bc76a4c42e"
     end
   end
 
